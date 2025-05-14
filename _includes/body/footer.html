@@ -17,3 +17,16 @@
   <hr class="sr-only"/>
 </footer>
 {% endif %}
+
+<script src="/assets/js/simple-jekyll-search.min.js"></script>
+<script src="/assets/js/search-init.js"></script>
+<script>
+  function triggerSearchIfNeeded() {
+    if (location.pathname.startsWith('/search')) {
+      initSimpleSearch();
+    }
+  }
+
+  document.addEventListener('DOMContentLoaded', triggerSearchIfNeeded);
+  document.addEventListener('hy-push-state-load', triggerSearchIfNeeded);
+</script>
