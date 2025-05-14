@@ -1,8 +1,17 @@
 function initSimpleSearch() {
+
+  const input = document.getElementById('search-input');
+  const results = document.getElementById('results-container');
+  if (!input || !results) return;
+
+  if (window.simpleJekyllSearchInstance){
+    // 이전 인스턴스를 제거 (동일한 DOM에 두 번 초기화 방지)
+    delete window.simpleJekyllSearchInstance;
+  } 
     
     SimpleJekyllSearch({
-        searchInput: document.getElementById('search-input'),
-        resultsContainer: document.getElementById('results-container'),
+        searchInput: input,
+        resultsContainer: results,
         json: '/search.json', // 또는 '{{ "/search.json" | relative_url }}'
         searchResultTemplate: `
         <li class="content-item">
