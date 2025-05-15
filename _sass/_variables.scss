@@ -20,3 +20,25 @@ $menu-text: #bbb;
 $body-color: #333;
 $body-bg: #fff;
 $border-color: #ebebeb;
+
+:root {
+    --glass-bg: rgba(255, 255, 255, 0.8);
+    --card-bg: #ffffff;
+    --border: #ddd;
+    --hover-bg: #f0f0f0;
+    --text: #111;
+    --link: #007acc;
+    --icon-color: #666;
+    --accent: #007acc;
+}
+
+[data-theme="dark"] {
+    --glass-bg: rgba(30, 30, 30, 0.5);
+    --card-bg: #2a2a2a;
+    --border: #444;
+    --hover-bg: #3a3a3a;
+    --text: #ddd;
+    --link: #66ccff;
+    --icon-color: #aaa;
+    --accent: #66ccff; 
+}

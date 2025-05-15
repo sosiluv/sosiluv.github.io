@@ -1,0 +1,120 @@
+//sidebar
+.sidebar-sticky {
+    height: 100%;
+    padding-top: 5%;
+    position: absolute;
+}
+
+.sidebar-about {
+    padding-bottom: 10%;
+}
+
+.spread-btn {
+    left: 7%;
+    position: absolute;
+    padding: 0;
+    padding-top: 5px;
+    border: none;
+    background: none;
+    color: white;
+    cursor: pointer;
+}
+
+.spread-btn:hover {
+    color: grey;
+}
+
+.menu-wrapper {
+    display: flex;
+    text-align: left;
+    margin-left: 10%;
+    margin-bottom: 0%;
+
+    input[type=checkbox] {
+        display: none;
+    }
+
+    input[type=checkbox]~ul {
+        display: none;
+        list-style: none;
+    }
+
+    input[type=checkbox]:checked~ul {
+        display: block;
+    }
+}
+
+
+.search-page {
+    max-width: 768px;
+    margin: 3rem auto;
+    padding: 2rem;
+    backdrop-filter: blur(8px);
+    background: var(--glass-bg);
+    border-radius: 16px;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.1);
+}
+
+.search-header {
+    display: flex;
+    align-items: center;
+    background-color: var(--card-bg);
+    padding: 0.8rem 1rem;
+    border-radius: 12px;
+    border: 1px solid var(--border);
+    margin-bottom: 2rem;
+    transition: border 0.3s ease;
+}
+
+.search-header:focus-within {
+    border-color: var(--accent);
+}
+
+.search-icon {
+    color: var(--icon-color);
+    font-size: 1.2rem;
+    margin-right: 0.8rem;
+}
+
+#search-input {
+    flex: 1;
+    border: none;
+    font-size: 1.1rem;
+    background: transparent;
+    color: var(--text);
+    outline: none;
+}
+
+.search-results {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    color: var(--text);
+}
+
+.search-results li {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    transition: transform 0.2s ease, background 0.3s ease;
+    color: var(--text); // 👈 명시적으로 추가
+}
+
+.search-results li.no-results {
+    color: var(--text);
+    font-style: italic;
+    opacity: 0.8; 
+}
+
+.search-results li:hover {
+    background-color: var(--hover-bg);
+    transform: translateY(-2px);
+}
+
+.search-results a {
+    color: var(--link);
+    // text-decoration: none;
+    font-weight: 400; 
+}
