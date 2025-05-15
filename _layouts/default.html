@@ -27,30 +27,34 @@ layout: base
 
   {{ content }}
 
-  <hr class="dingbat related"/>
+  <!-- <hr class="dingbat related"/> -->
 
-  {% if site.posts.size > 0 %}
-    <h2 class="hr-bottom">{{ strings.posts | default:"Posts" }}</h2>
-    <ul class="related-posts">
-      {% for post in site.posts limit:5 %}
-        {% include_cached components/post-list-item.html post=post %}
-      {% endfor %}
-    </ul>
-  {% endif %}
+    {% if site.posts.size > 0 %}
+      <h2 class="hr-bottom">{{ strings.posts | default:"Posts" }}</h2>
+      <ul class="related-posts">
+        {% for post in site.posts limit:5 %}
+          {% include_cached components/post-list-item.html post=post %}
+        {% endfor %}
+      </ul>
+    {% endif %}
 
-  {% assign pages = site.html_pages | where:"layout","page" | where_exp:"page","page.sitemap != false" %}
-  {% if pages.size > 0 %}
-    <h2 class="hr-bottom">{{ strings.pages | default:"Pages" }}</h2>
-    <ul class="related-posts">
-      {% for page in pages limit:5 %}
-        {% if page.layout == 'page' %}
-          <li class="h4">
-            <a href="{{ page.url | relative_url }}" class="flip-title">
-              <span>{{ page.title }}</span>
-            </a>
-          </li>
-        {% endif %}
-      {% endfor %}
-    </ul>
-  {% endif %}
+    {% assign tag_titles = site.data.tag_titles %}
+    {% assign sorted_tags = site.tags | sort %}
+
+    <h2 class="hr-bottom">{{ strings.tags | default: "Tags" }}</h2>
+    <div class="tag-grid">
+    {% for tag in sorted_tags %}
+      {% assign tag_name = tag[0] %}
+      {% assign title = tag_titles[tag_name] | default: tag_name %}
+      {% assign slug = tag_name %}
+
+      <a href="/tag-{{ slug }}/" class="tag-box">
+        <span class="tag-name">{{ title }}</span>
+        <span class="tag-count">({{ tag[1].size }})</span>
+      </a>
+    {% endfor %}
+    </div>
+    <p class="faded fine" style="margin-top: 2rem;">
+    원하는 주제의 태그를 클릭하면 해당 글 목록으로 이동합니다.
+    </p>
 </article>

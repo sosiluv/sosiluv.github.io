@@ -2,7 +2,7 @@
 layout: post
 title: 📘 Git 명령어 정리
 image:
-  path: /assets/img/blog/example-content-iii.jpg
+  path: /assets/img/blog/blog-basic.jpg
 categories: [study, etc]
 tags: [git]
 description: >

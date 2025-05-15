@@ -60,11 +60,11 @@ menu:
       - title:            Algorithm
         url:              /algorithm/
       - title:            Data Structure
-        url:              /ds/
+        url:              /data-structure/
       - title:            ETC
         url:              /etc/  
-  - title:             Documentation
-    url:               /docs/
+  - title:             Tags
+    url:               /tags/
   - title:             About
     url:               /about/
 
@@ -299,6 +299,10 @@ collections:
 
   projects:
     permalink:         /projects/:path/
+    output:            true
+  
+  pages:
+    permalink:         /:name/
     output:            true
 
 # File inclusion/exclusion

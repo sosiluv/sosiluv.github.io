@@ -1,0 +1,33 @@
+---
+layout: page
+---
+
+{% assign tag_titles = site.data.tag_titles %}
+{% assign sorted_tags = site.tags | sort %}
+
+<div class="tag-grid">
+    {% for tag in sorted_tags %}
+    {% assign tag_name = tag[0] %}
+    {% assign title = tag_titles[tag_name] | default: tag_name %}
+    {% assign slug = tag_name %}
+
+    <a href="/tag-{{ slug }}/" class="tag-box">
+        <span class="tag-name">{{ title }}</span>
+        <span class="tag-count">({{ tag[1].size }})</span>
+    </a>
+    {% endfor %}
+</div>
+
+<p class="faded fine" style="margin-top: 2rem;">
+    원하는 주제의 태그를 클릭하면 해당 글 목록으로 이동합니다.
+</p>
+
+
+{% if site.posts.size > 0 %}
+<h2 class="hr-bottom">{{ strings.posts | default:"Posts" }}</h2>
+<ul class="related-posts">
+    {% for post in site.posts limit:5 %}
+    {% include_cached components/post-list-item.html post=post %}
+    {% endfor %}
+</ul>
+{% endif %}
