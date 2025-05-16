@@ -5,5 +5,5 @@ title: Web
 slug: web
 sidebar: true
 description: >
-  about Web
+  HTML, CSS, JavaScript 등 웹 프론트엔드 기초와 브라우저 동작 원리에 대한 내용을 다룹니다.
 ---
