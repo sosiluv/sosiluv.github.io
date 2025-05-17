@@ -108,12 +108,11 @@ Sitemap: https://domain/sitemap.xml
 #### 🔗 [https://search.google.com/search-console](https://search.google.com/search-console) 접속
 ### 📝 URL 접두어 : github 블로그 주소 입력
 
-![](https://i.imgur.com/1P25zNn.png)
+![](https://i.imgur.com/MGQawGm.png)
 
 ### 📝 소유권 인증
 
-
-![](https://i.imgur.com/r4U3Rch.png)
+![](https://i.imgur.com/1hhpUQn.png)
 
 ```html
 <meta name="google-site-verification" content="내코드" />
@@ -130,7 +129,7 @@ google_site_verification: "content코드 입력"
 
 ### 📝 소유권 확인 완료
 
-![](https://i.imgur.com/sEi7TS0.png)
+![](https://i.imgur.com/6C0380x.png)
 
 ### 📝 sitemaps 메뉴에서 `sitemap.xml` `feed.xml` 제출
 
