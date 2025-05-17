@@ -108,12 +108,12 @@ Sitemap: https://domain/sitemap.xml
 #### 🔗 [https://search.google.com/search-console](https://search.google.com/search-console) 접속
 ### 📝 URL 접두어 : github 블로그 주소 입력
 
-![|754x590](https://i.imgur.com/1P25zNn.png)
+![](https://i.imgur.com/1P25zNn.png)
 
 ### 📝 소유권 인증
 
 
-![|885x348](https://i.imgur.com/r4U3Rch.png)
+![](https://i.imgur.com/r4U3Rch.png)
 
 ```html
 <meta name="google-site-verification" content="내코드" />
@@ -130,11 +130,11 @@ google_site_verification: "content코드 입력"
 
 ### 📝 소유권 확인 완료
 
-![|908x395](https://i.imgur.com/sEi7TS0.png)
+![](https://i.imgur.com/sEi7TS0.png)
 
 ### 📝 sitemaps 메뉴에서 `sitemap.xml` `feed.xml` 제출
 
-![|925x230](https://i.imgur.com/wdnNNWR.png)
+![](https://i.imgur.com/XhAWL1k.png)
 
 * [naver webmaster](https://searchadvisor.naver.com/console/board)도 구글처럼 간단하게 등록할 수 있으니까 참고 바랍니다.
 
