@@ -3,6 +3,15 @@ layout: post
 title: 📘 [GithubPages] Jekyll Hydejack 블로그 SEO 최적화 방법
 description: Jekyll Hydejack 블로그에서 검색엔진 최적화를 위해 적용한 방법을 정리합니다. 메타 태그, sitemap 설정, 페이지 속도 최적화까지 실제 적용한 팁을 담았습니다.
 date: 2025-05-17
+related_posts:
+  - _posts/study/etc/2025-02-26-markdown-001.md
+  - _posts/study/etc/2025-03-02-githubpages-002.md
+  - _posts/study/etc/2025-03-03-githubpages-003.md
+  - _posts/study/etc/2025-03-05-githubpages-004.md
+  - _posts/study/etc/2025-03-07-githubpages-005.md
+  - _posts/study/etc/2025-03-08-githubpages-006.md
+  - _posts/study/etc/2025-03-10-githubpages-007.md
+  - _posts/study/etc/2025-03-15-githubpages-008.md
 categories:
   - study
   - etc
@@ -99,11 +108,12 @@ Sitemap: https://domain/sitemap.xml
 #### 🔗 [https://search.google.com/search-console](https://search.google.com/search-console) 접속
 ### 📝 URL 접두어 : github 블로그 주소 입력
 
+![|754x590](https://i.imgur.com/1P25zNn.png)
 
- ![[2025-05-17-jekyll-hydejack-seo-guide-1.png]]
 ### 📝 소유권 인증
 
- ![[2025-05-17-jekyll-hydejack-seo-guide-2.png]]
+
+![|885x348](https://i.imgur.com/r4U3Rch.png)
 
 ```html
 <meta name="google-site-verification" content="내코드" />
@@ -120,10 +130,11 @@ google_site_verification: "content코드 입력"
 
 ### 📝 소유권 확인 완료
 
-![[2025-05-17-jekyll-hydejack-seo-guide-5.png]]
+![|908x395](https://i.imgur.com/sEi7TS0.png)
+
 ### 📝 sitemaps 메뉴에서 `sitemap.xml` `feed.xml` 제출
 
-![[2025-05-17-jekyll-hydejack-seo-guide-4.png]]
+![|925x230](https://i.imgur.com/wdnNNWR.png)
 
 * [naver webmaster](https://searchadvisor.naver.com/console/board)도 구글처럼 간단하게 등록할 수 있으니까 참고 바랍니다.
 
