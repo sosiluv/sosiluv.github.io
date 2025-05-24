@@ -31,7 +31,7 @@ description:           >
 tagline:               Dev Study
 
 # A list of keywords for your blog
-keywords:              [java, react, coding, spring, blog, dev]
+keywords:              [java, react, coding, spring, blog, dev, frontend, backend]
 
 # A (square) logo for your site.
 # If provided, it will be shown at the top of the sidebar.
@@ -50,10 +50,10 @@ menu:
   - title:             Dev
     url:               /dev/
     submenu:
-    - title:            React
-      url:              /react/
-    - title:            Spring
-      url:              /spring/
+    - title:            FrontEnd
+      url:              /frontend/
+    - title:            BackEnd
+      url:              /backend/
   - title:             Study
     url:               /study/
     submenu:
