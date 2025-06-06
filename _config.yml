@@ -50,12 +50,14 @@ menu:
   - title:             Dev
     url:               /dev/
     submenu:
-    - title:            FrontEnd
-      url:              /frontend/
-    - title:            BackEnd
-      url:              /backend/
-  - title:             Study
-    url:               /study/
+      - title:            FrontEnd
+        url:              /frontend/
+      - title:            BackEnd
+        url:              /backend/
+      - title:            DevOps
+        url:              /devops/  
+      - title:            Study
+        url:              /study/
     submenu:
       - title:            Algorithm
         url:              /algorithm/
